@@ -78,6 +78,7 @@ def test_8_chars_with_caret_especial_character_password_should_validate():
         # when
         validator.password_validate()
 
+
 def test_8_chars_with_foward_especial_character_password_should_validate():
     # given x
     validator = PasswordValidator(content="1eAB1eA/")

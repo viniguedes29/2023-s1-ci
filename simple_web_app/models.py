@@ -32,7 +32,7 @@ class PasswordValidator(BaseModel):
             LowerCaseValidator(),
             UpperCaseValidator(),
             EspecialCharacterValidator(),
-            FowardCaretTildeCharacterValidator()
+            FowardCaretTildeCharacterValidator(),
         ]
         return validators
 
