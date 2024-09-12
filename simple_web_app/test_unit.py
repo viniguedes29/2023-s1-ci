@@ -60,6 +60,7 @@ def test_8_chars_with_no_especial_character_password_should_raise_exception():
         # when
         validator.password_validate()
 
+
 def test_8_chars_with_tilde_especial_character_password_should_validate():
     # given
     validator = PasswordValidator(content="1eAB1eA~")
@@ -67,6 +68,7 @@ def test_8_chars_with_tilde_especial_character_password_should_validate():
     with pytest.raises(Exception):  # then
         # when
         validator.password_validate()
+
 
 def test_8_chars_with_caret_especial_character_password_should_validate():
     # given x
